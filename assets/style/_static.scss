@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.btn{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 3em;
+    height: 100%;
+    top: 0;
+    left: -35%;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    -ms-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn:hover:before {
+    left: 130%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg-btn{
+    background-color: $color-global!important;
+    color: white!important;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-contain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content{
+        background-color: #F9F9FB;
+        margin-top: 60px;
+}
+.title-cost__info {
+    margin-bottom: 70px;
+
+}
+.page-title{
+    @include fontStyle(20px);
+    color: $color-dark;
+}
+
+/* width */
+.scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $color-light; 
+}
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: $color-global; 
+}
+
+::selection{
+    background-color: $color-global;
+    color: white;
+}

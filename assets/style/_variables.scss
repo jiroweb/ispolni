@@ -1,0 +1,17 @@
+$color-global: #2DCA73;
+$color-dark: #4F4F4F;
+$color-light: #BDBDBD;
+$color-gradient: linear-gradient(180deg, #2DCA73 0%, #0C8F71 100%);
+
+$border-radius: 8px;
+$transition-all: .4s;
+
+@mixin fontStyle($fontSize){
+font-weight: 500;
+font-size: $fontSize;
+}
+
+@mixin wh($width, $height){
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,313 @@
+@media (max-width: 767.98px) {
+  /*=======================-HEADER-MEDIA-max-width-767.98-START-=======================*/
+
+  .header-menu {
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    margin-left: 0;
+    overflow-y: auto;
+    background: white;
+    order: 1;
+    transition: $transition-all;
+  }
+  .body-fix .header-menu {
+    width: 230px;
+    transition: $transition-all;
+    box-shadow: 0px 0px 8px #333;
+  }
+  .header-menu__mobile {
+    display: block;
+  }
+
+  .header-menu__list {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+
+  .menu .menu-list li + li {
+    margin-left: 0;
+  }
+
+  .header-menu .header-menu__list li a {
+    padding-bottom: 10px;
+  }
+
+  .header-user {
+    margin-left: 20px;
+  }
+
+  /*========================-HEADER-MEDIA-max-width-767.98-END-========================*/
+
+  /*==================== -CONTENT-BOX-MEDIA-max-width-767.98-START- ================== */
+
+  .title-cost__info {
+    margin-bottom: 25px;
+  }
+
+  /*===================== -CONTENT-BOX-MEDIA-max-width-767.98-END- =================== */
+  /*=================== -PROHECTS-DETAILS-max-width-767.98-START- =====================*/
+  .main-title__info {
+    flex-direction: column;
+  }
+  .main-title__info {
+    .investor-info {
+      align-items: center;
+      flex-direction: initial;
+      justify-content: flex-start;
+    }
+    .content-box__cost {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  .projects-parameters__block h4 {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+  .offered-price__line .price-parameters p {
+    font-size: 16px;
+  }
+  .offered-price__line .price-parameters i {
+    font-size: 13px;
+  }
+  .offered-price__line .price-parameters__info p {
+    font-size: 11px;
+  }
+  .projects-parameters__block {
+    padding: 25px 20px;
+  }
+  .projects-parameters
+    .projects-parameters__block
+    .investment-price__info--block {
+    margin-bottom: 28px;
+  }
+  .investment-details__date--percent p {
+    font-size: 13px;
+  }
+  .investment-details__main {
+    margin-bottom: 25px;
+  }
+  .deadline {
+    margin-bottom: 25px;
+  }
+  .projects-same__info tr td:first-child {
+    font-size: 13px;
+  }
+  .projects-same__info tr td {
+    font-size: 13px;
+    padding-bottom: 13px;
+  }
+  .download-file {
+    font-size: 13px;
+    .download-svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+    }
+  }
+
+  .range-price__info {
+    margin-bottom: 25px;
+  }
+  .price-info__green {
+    margin-bottom: 25px;
+  }
+  /*==================== -PROHECTS-DETAILS-max-width-767.98-END- ======================*/
+
+  /*======================= -STEPS-MEDIA-max-width-767.98-START- ===================== */
+
+  .steps .steps-count ul li span {
+    display: none;
+  }
+  .steps .steps-count ul .steps-count__ready:after {
+    top: 15px;
+  }
+  .steps .steps-count ul li + li {
+    margin-left: 25px;
+  }
+  .steps-blocks .steps-blocks__name {
+    display: block;
+  }
+  .steps-box__btn {
+    margin-top: 20px;
+  }
+
+  // FIRST
+  .data .data-inputs {
+    width: 100%;
+  }
+  .data .data-inputs__box input,
+  .data .data-inputs__box input::placeholder,
+  .data .data-inputs__box .jq-selectbox__select .jq-selectbox__select-text,
+  .please .please-input input,
+  .please .please-input input::placeholder {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .data .data-inputs__box input,
+  .data .data-inputs__box .jq-selectbox__select,
+  .please .please-input input {
+    height: 48px;
+  }
+
+  // SECOND
+  .face .face-box {
+    width: 50%;
+  }
+  .filter-box .filter-box__input input {
+    font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+  .filter-box .filter-box__list .filter-box__list--name p {
+    font-size: 14px;
+  }
+  .filter-box .filter-box__list .filter-box__list--name span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  /*======================= -STEPS-MEDIA-max-width-767.98-END- ===================== */
+  /*======================= -INVESTMENT-max-width-767.98-START- ==================== */
+
+  .content-about__links.menu .menu-list li,
+  .content-about__links.menu .menu-list li + li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .content-box__cost {
+    justify-content: center;
+  }
+  .investment-date__info {
+    flex-direction: column;
+  }
+  .returned-investment .investment-info {
+    min-height: 480px;
+  }
+  .canceled-investment .investment-info {
+    min-height: 450px;
+  }
+  .canceled-investment .investment-date__info {
+    width: unset;
+  }
+  .content-box__cost .cost-block p {
+    font-size: 9px;
+  }
+  /*======================== -INVESTMENT-max-width-767.98-END- ====================== */
+  /*====================== -REGISTRATION-max-width-767.98-START- ==================== */
+  .registration-block h3 {
+    text-align: center;
+  }
+  .registration-img {
+    display: none;
+  }
+  .registration-part {
+    width: 100%;
+  }
+  /*======================= -REGISTRATION-max-width-767.98-END- ===================== */
+  /*======================= -DOCUMENTS-max-width-767.98-START- ====================== */
+  .documents-info h4 {
+    text-align: center;
+  }
+  .company-document__main .single-info__block--big {
+    width: 33.333%;
+  }
+  .videos-info__block .video-block {
+    width: 50%;
+  }
+
+  /*======================== -DOCUMENTS-max-width-767.98-END- ======================= */
+  /*====================== -BORROWERS-max-width-767.98-START- ======================= */
+  .borrow-info__block {
+    margin: 46px 0 12px;
+  }
+  .borrow-info__circle {
+    flex-direction: column;
+  }
+  .circle {
+    margin-bottom: 50px;
+  }
+  .borrow-info__block .borrow-number__all {
+    margin: 0 0 15px;
+  }
+  .borrowers-table__scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+    table {
+      width: 655px;
+    }
+  }
+  /*======================== -BORROWERS-max-width-767.98-END- ======================= */
+  /*================== -PROJECT-INVESTMENT-max-width-767.98-START- ================== */
+  .cost-info__details .about-cost__range {
+    width: 100%;
+  }
+  .cost-info__details > p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*=================== -PROJECT-INVESTMENT-max-width-767.98-END- =================== */
+
+  /*=================== - NEWS-max-width-767.98-START- =================== */
+  .news-info {
+    margin: 0 -5px;
+  }
+  .news-info .news-info__block {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .news-info .news-info__block .news-info__box {
+    padding: 22px 15px 35px 15px;
+  }
+  .news-info .news-info__block .news-info__box .news-info__box--text__block {
+    min-height: auto;
+  }
+  /*=================== - NEWS-max-width-767.98-END- =================== */
+  /*================= -PROFILE-max-width-767.98-START- ================= */
+  .personal-info__table {
+    padding: 25px 20px;
+  }
+  .profile-info .profile-info__main .profile-info__block .personal-info .personal-info__main {
+    width: 100%;
+  }
+  .profile-info .company-info__main {
+    margin-top: 20px;
+  }
+  .company-info__block .title-cost__info {
+    flex-direction: initial;
+  }
+  /*================== -PROFILE-max-width-767.98-END- ================== */
+  /*=============== -REQUISTIES-max-width-767.98-START- ================ */
+  .title-cost__info {
+    flex-direction: column;
+  }
+  .requisites-link__download {
+    margin-top: 10px;
+  }
+  .requisites .requisites-info__block .requisites-info__box .requisites-info__box--number{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--title p {
+    margin-bottom: 25px;
+  }
+  .requisites-info__block .requisites-info__box .requisites-info__box--text {
+    margin-bottom: 25px;
+  }
+  /*================= -REQUISTIES-max-width-767.98-END- ================ */
+}

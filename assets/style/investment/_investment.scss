@@ -1,0 +1,104 @@
+.content-box__info--title {
+  background-color: white;
+}
+.content-about {
+  max-width: 1168px;
+  width: 100%;
+  margin: auto;
+  padding: 34px 40px 0;
+}
+.title-cost__info {
+  
+    margin-bottom: 44px;
+  
+}
+.content-box__cost {
+  .cost-block {
+    p {
+      font-weight: bold;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: $color-light;
+      white-space: nowrap;
+      margin: 5px 0;
+    }
+    > i {
+      @include fontStyle(24px);
+      text-align: right;
+      color: $color-dark;
+      display: block;
+    }
+    &:nth-child(n + 2) {
+      margin-left: 23px;
+    }
+  }
+  .income {
+    > i {
+      color: $color-global;
+    }
+  }
+}
+
+.content-box__main--style {
+  .content-box__cost {
+    margin-bottom: 55px;
+  }
+  .cost-block {
+    > i {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+}
+.investment-price__details {
+  margin-right: 28px;
+  p {
+    @include fontStyle(16px);
+    color: $color-dark;
+  }
+
+  span {
+    @include fontStyle(16px);
+    color: $color-global;
+  }
+}
+.investment-price__date {
+  .investment-date__info {
+    margin-right: 0;
+    span {
+      font-size: 13px;
+    }
+  }
+}
+
+.current-investment {
+  .investment-price__line {
+    width: 272px;
+  }
+}
+
+.expired-date {
+  i {
+    color: orange;
+  }
+}
+.returned-date {
+  span {
+    i {
+      color: $color-global;
+    }
+  }
+}
+.canceled-investment .investment-date__info {
+  width: 125px;
+}
+
+
+.content-about__links .menu-list li *{
+  padding: 13px 0;
+  display: inline-block;
+}
+
+// .content-about__filter > *{
+//   display: none;
+// }

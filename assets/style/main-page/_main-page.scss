@@ -1,0 +1,317 @@
+.main-title__info {
+  .investor-info {
+    margin-bottom: 51px;
+  }
+
+  .investor-logo__number {
+    margin-right: 18px;
+  }
+
+  .investor-logo {
+    @include wh(80px, 80px);
+    margin-bottom: 0;
+  }
+
+  .investor-name__info {
+    margin-bottom: 2px;
+
+    p {
+      margin: 0 8px 0 0;
+      font-size: 16px;
+    }
+  }
+
+  .investor-degree {
+    margin-bottom: 12px;
+
+    >p {
+      @include fontStyle(20px);
+      color: $color-dark;
+    }
+  }
+
+  .investment-btn__style {
+    background: #2dca73;
+    @include fontStyle(12px);
+    color: white;
+    margin-left: 5px;
+  }
+
+  .content-box__cost {
+    .investment-confirm {
+      flex-direction: row-reverse;
+
+      .investment-btn {
+        margin-left: 16px;
+        padding: 15px 32px;
+      }
+    }
+
+    .income {
+      text-align: end;
+    }
+
+    .confirm-svg {
+      margin-left: 0;
+      @include wh(40px, 40px);
+      background-color: #e0e0e0;
+      transition: 0.3s;
+
+      .confirm-svg__style {
+        @include wh(22px, 19px);
+      }
+
+      &:hover {
+        background: $color-global;
+      }
+    }
+  }
+}
+.investment-price__info--block {
+  margin-bottom: 37px;
+  .investment-price__line{
+    width: 100%;
+  }
+}
+.investor-name {
+  .investor-projects__info {
+    span {
+      color: $color-global;
+    }
+  }
+}
+
+.content-box__info {
+  padding: 32px 40px 80px;
+}
+
+.projects-parameters {
+  width: 64%;
+
+}
+
+.projects-parameters__block+.projects-parameters__block {
+  margin-top: 25px;
+}
+
+.projects-parameters__block {
+  background-color: white;
+  padding: 34px 24px;
+  border-radius: 8px;
+
+  h4 {
+    @include fontStyle(18px);
+    color: $color-dark;
+    margin-bottom: 23px;
+  }
+}
+
+.offered-price__line {
+  margin-bottom: 11px;
+
+  .price-parameters {
+    p {
+      @include fontStyle(22px);
+      color: $color-dark;
+    }
+
+    i {
+      @include fontStyle(17px);
+      color: $color-dark;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 11px;
+      color: #bbbbbb;
+      margin: 0 4px;
+    }
+  }
+
+  .price-parameters__info {
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      color: $color-dark;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 11px;
+      color: #bbbbbb;
+      margin-right: 4px;
+    }
+
+    text-transform: uppercase;
+  }
+}
+
+.investment-details__main {
+  margin-bottom: 33px;
+}
+
+.investment-details__date--percent {
+  p {
+    @include fontStyle(18px);
+    color: $color-dark;
+  }
+
+  >span {
+    font-weight: bold;
+    font-size: 11px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    display: block;
+  }
+}
+
+.deadline {
+  margin-bottom: 30px;
+
+  p {
+    font-weight: normal;
+    font-size: 15px;
+  }
+}
+
+.projects-same__info {
+  tr {
+    margin-bottom: 16px;
+
+    td {
+      font-weight: normal;
+      font-size: 15px;
+      color: $color-dark;
+      padding-bottom: 16px;
+      line-height: 22px;
+
+      &:first-child {
+        @include fontStyle(15px);
+        color: #bbbbbb;
+      }
+
+      .query {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+.download-file {
+  @include fontStyle(15px);
+  color: $color-global;
+
+  .download-svg {
+    @include wh(16px, 16px);
+    margin-right: 7px;
+
+    svg {
+      fill: $color-global;
+    }
+  }
+}
+
+.cost-investment__info--block {
+  width: 34%;
+}
+
+.about-cost__range {
+  >span {
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    margin-bottom: 7px;
+    display: block;
+  }
+}
+
+.calc-form-input {
+  @include wh(100%, 54px);
+  position: relative;
+  margin-bottom: 10px;
+
+  label {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+  }
+}
+
+.range-calc {
+  @include wh(100%, 8px);
+  z-index: 9;
+  position: relative;
+  top: -2.5px;
+  left: 0;
+  display: block;
+  opacity: 1;
+  background-color: transparent;
+  margin: 0;
+  -webkit-appearance: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    @include wh(20px, 20px);
+    background: $color-global;
+    cursor: -webkit-grab;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 8px rgba(28, 45, 65, 0.35);
+
+  }
+}
+
+.for-range-calc {
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color-global;
+}
+
+.curent-ps {
+  width: 100%;
+  height: 100%;
+  @include fontStyle(20px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $color-dark;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px 8px 0px 0px;
+  padding: 0 14px;
+
+}
+
+.range-price__info {
+  margin-bottom: 30px;
+
+  p {
+    @include fontStyle(13px);
+    color: #808080;
+  }
+}
+
+.price-info__green {
+  margin-bottom: 36px;
+
+  p {
+    color: $color-global;
+  }
+}
+
+.info-desk {
+  margin-top: 17px;
+
+  p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #808080;
+  }
+}

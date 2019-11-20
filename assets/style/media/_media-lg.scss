@@ -1,0 +1,441 @@
+@media (max-width: 1199.98px) {
+  .container {
+    padding: 0 15px;
+  }
+  /*=======================-HEADER-MEDIA-max-width-1199.98-START-=======================*/
+  .header-menu {
+    margin-left: 30px;
+  }
+
+  .menu .menu-list li {
+    font-size: 12px;
+  }
+
+  .menu .menu-list li + li {
+    margin-left: 20px;
+  }
+
+  .header-user {
+    min-width: 220px;
+  }
+
+  .my-select .jq-selectbox__select-text {
+    font-size: 12px;
+  }
+
+  /*========================-HEADER-MEDIA-max-width-1199.98-END-========================*/
+
+  .content {
+    margin-top: 56px;
+  }
+
+  /*=======================-LEFT-SIDEBAR-MEDIA-max-width-1199.98-START-=======================*/
+  .left-sidebar {
+    width: 43px;
+    padding-top: 56px;
+  }
+
+  .left-sidebar__links {
+    padding: 0 9px 5px 15px;
+
+    .left-sidebar__politics a {
+      display: none;
+      font-size: 12px;
+    }
+  }
+
+  .left-sidebar__links ul {
+    border-bottom: 1px solid transparent;
+
+    li a:before {
+      left: -15px;
+    }
+  }
+
+  .left-sidebar__mobile {
+    display: block;
+  }
+
+  .content-box {
+    width: calc(100% - 43px);
+  }
+
+  /*=======================-LEFT-SIDEBAR-MEDIA-max-width-1199.98-END-=======================*/
+  /*====================== -CONTENT-BOX-MEDIA-max-width-1199.98-START- ==================== */
+
+  .title-cost__info {
+    margin-bottom: 35px;
+  }
+  .page-title {
+    font-size: 17px;
+  }
+  .investment-projects__main-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .investment-projects__block {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .investment-projects__block + .investment-projects__block {
+    margin-top: 0px;
+  }
+
+  .protection {
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 8px 8px 0px 0px;
+    p {
+      transform: rotate(0deg);
+    }
+  }
+
+  .investment-projects__main-block {
+    .investment-projects__block {
+      &:not(:first-of-type) .single-link {
+        opacity: 1;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .single-link {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+    justify-content: center;
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .investment-info {
+    flex-direction: column;
+    padding: 30px 10px 15px 10px;
+    width: 100%;
+    min-height: 542px;
+  }
+
+  .investor-info {
+    flex-direction: column;
+  }
+
+  .investor-logo__number {
+    margin-right: 0;
+  }
+
+  .investor-number {
+    p {
+      text-align: center;
+    }
+  }
+
+  .investor-degree {
+    justify-content: center;
+  }
+
+  .investor-name {
+    margin-top: 20px;
+  }
+
+  .investment-percent__term {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .percent-term__price {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .price-main__info {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .percent-main__info,
+  .term-main__info {
+    text-align: center;
+  }
+
+  .term-main__info .single-link {
+    margin-left: 0;
+  }
+
+  .investment-term__info {
+    margin: 0;
+    text-align: center;
+  }
+
+  .investment-price__line {
+    @include wh(100%, 4px);
+  }
+
+  .investment-date__confirm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .investment-date__info {
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .date-main__info {
+    margin: 15px 0 15px;
+    width: 100%;
+  }
+
+  .investment-confirm__info {
+    p {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  .investor-number {
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .investor-name__info {
+    p {
+      font-size: 13px;
+      margin: 8px 0 16px;
+    }
+  }
+
+  .investment-percent__info {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .query {
+    margin-left: 3px;
+  }
+
+  .investment-term__info {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .offered-price {
+    p {
+      font-size: 13px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .max-price {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .investment-price__date .investment-date__info {
+    p {
+      font-size: 13px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+  /*======================= -CONTENT-BOX-MEDIA-max-width-1199.98-END- ===================== */
+  /*=================== -PROJECTS-DETAILS-max-width-1199.98-START- =====================*/
+  .main-title__info .investor-info {
+    margin-bottom: 20px;
+    flex-direction: inherit;
+  }
+  .main-title__info .investor-degree {
+    margin-bottom: 8px;
+    justify-content: flex-start;
+    > p {
+      font-size: 18px;
+    }
+  }
+  .main-title__info .investment-btn__style {
+    font-size: 13px;
+  }
+  .main-title__info .content-box__cost .investment-confirm .investment-btn {
+    margin-left: 10px;
+    padding: 12px 32px;
+  }
+  .projects-parameters {
+    width: 100%;
+  }
+  .investment-details__date--percent p {
+    font-size: 16px;
+  }
+  .projects-parameters
+    .projects-parameters__block
+    + .projects-parameters__block {
+    margin-top: 15px;
+  }
+  .cost-investment__info--block {
+    width: 100%;
+    margin-top: 15px;
+  }
+  /*==================== -PROJECTS-DETAILS-max-width-1199.98-END- ======================*/
+  /*======================= -STEPS-MEDIA-max-width-1199.98-START- ===================== */
+  .steps .steps-count ul li + li {
+    margin-left: 15px;
+  }
+
+  // SECOND
+  .face {
+    margin: 0 -10px;
+    .face-box {
+      padding: 8px 10px;
+    }
+  }
+  .face .face-box .face-box__add .face-box__add--text,
+  .face .face-box .face-box__ready .face-box__ready--name,
+  .face .face-box .face-box__ready .face-box__ready--nuber {
+    font-size: 12px;
+  }
+  /*======================= -STEPS-MEDIA-max-width-1199.98-END- ===================== */
+  /*======================== -INVESTMENT-max-width-1199.98-END- ====================== */
+  .investment-price__details {
+    margin-right: 0;
+    text-align: center;
+  }
+  .content-box__main--style .content-box__cost {
+    margin-bottom: 30px;
+  }
+  .content-box__cost .cost-block > i {
+    font-size: 19px;
+  }
+  .current-investment .investment-price__line {
+    width: 100%;
+  }
+  .investment-price__date .investment-date__info {
+    max-width: unset;
+  }
+
+  /*======================== -INVESTMENT-max-width-1199.98-END- ====================== */
+
+  .investment-status {
+    margin: 20px 0 0 !important;
+  }
+  /*====================== -REGISTRATION-max-width-1199.98-START- ==================== */
+  .registration-block h3 {
+    font-size: 20px;
+  }
+  /*======================= -REGISTRATION-max-width-1199.98-END- ===================== */
+  /*======================= -DOCUMENTS-max-width-1199.98-START- ====================== */
+  .company-document__main .single-info__block--big {
+    width: 25%;
+  }
+  /*======================== -DOCUMENTS-max-width-1199.98-END- ======================= */
+  /*======================= -BORROWERS-max-width-1199.98-START- ====================== */
+  .security-block {
+    text-align: center;
+  }
+  .cost-investment__info--block {
+    .projects-same__info {
+      table {
+        tr td {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .contracts-history table {
+    margin: 0 auto 20px;
+    width: 300px;
+  }
+  .borrowers-history__table table td {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+  .borrowers-history__table table tr:first-child th {
+    padding: 8px;
+    font-size: 12px;
+  }
+  /*======================== -BORROWERS-max-width-1199.98-END- ======================= */
+  /*================== -PROJECT-INVESTMENT-max-width-1199.98-START- ================== */
+  .project-investment__about--cost {
+    width: 100%;
+    margin-top: 15px;
+  }
+  /*=================== -PROJECT-INVESTMENT-max-width-1199.98-END- =================== */
+
+  /*================== -BALANCE-max-width-1199.98-START- ================== */
+  .balance-info .balance-info__block {
+    width: 50%;
+  }
+  .balance-info .balance-info__block .balance-info__box {
+    padding: 34px 15px 40px 15px;
+  }
+
+  .balance-history {
+    padding: 34px 15px 0 15px;
+  }
+  .balance-history
+    .balance-history__form
+    .balance-history__form--info
+    .balance-history__form--info__date
+    .balance-history__form--info__date--box {
+    width: 50%;
+    input {
+      font-size: 13px;
+    }
+  }
+  .balance-history .balance-history__form .balance-history__form--info {
+    width: 100%;
+    flex-direction: column;
+    .jq-selectbox__select {
+      width: 100%;
+      .jq-selectbox__select-text {
+        width: 100%;
+      }
+    }
+    .balance-history__form--info__date {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .balance-history__form--btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .balance-history .balance-history__form .balance-history__form--btn button {
+    width: 100%;
+  }
+  .balance-history
+    .balance-history__form
+    .balance-history__form--btn
+    button
+    + button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .balance-history .balance-history__table {
+    margin: 0 -15px;
+  }
+  /*=================== -BALANCE-max-width-1199.98-END- =================== */
+
+  /*================== -PROFILE-max-width-1199.98-START- ================== */
+  .profile-info .profile-info__main .profile-info__block{
+    width: 100%;
+  }
+  .profile-info .company-info__main {
+    width: 100%;
+  }
+  /*=================== -PROFILE-max-width-1199.98-END- =================== */
+}

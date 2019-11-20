@@ -1,0 +1,23 @@
+.requests-block{
+    margin-top: 47px;
+}
+.fund-raising, .check, .reject{
+    .investment-btn{
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+}
+.check{
+    .investment-btn{
+        background-color: #0AAFFF;
+    }
+}
+.reject{
+    .investment-btn{
+        background-color: #FF7D51
+    }
+}
+.investment-status__add .investment-status{
+    margin-right: 30px
+}

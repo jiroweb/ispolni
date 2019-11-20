@@ -1,0 +1,185 @@
+.security-block {
+  background: linear-gradient(180deg, #2dca73 0%, #0c8f71 100%);
+  h4,p,span {
+    color: white;
+  }
+  p {
+    @include fontStyle(32px);
+  }
+  span {
+    line-height: 20px;
+    @include fontStyle(13px);
+  }
+}
+.company-parametrs {
+  padding-bottom: 75px;
+}
+.borrow-info__block {
+  margin: 51px auto 17px;
+  max-width: 554px;
+  width: 100%;
+  .circle-box{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    .circle-box_content{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: inset 0px 0px 0px 8px #c0efd5;
+      svg{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: rotate(-90deg);
+        circle{
+          stroke: $color-global;
+          stroke-width: 16;
+          fill: none;
+          stroke-dasharray: 566;
+        }
+      }
+    }
+    .borrow-number__all {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      white-space: nowrap;
+      span {
+        @include fontStyle(13px);
+        color: #bbbbbb;
+        margin-bottom: 15px;
+        display: block;
+      }
+      p {
+        color: $color-dark;
+        @include fontStyle(18px);
+        line-height: 21px;
+      }
+    }
+  }
+
+
+
+
+
+ 
+  .borrow-number {
+    ul {
+      li {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -15px;
+          top: 7px;
+          @include wh(8px, 8px);
+          border-radius: 50%;
+        }
+
+        p {
+          @include fontStyle(16px);
+          color: $color-dark;
+        }
+        span {
+          font-weight: bold;
+          font-size: 11px;
+          color: #bbbbbb;
+          text-transform: uppercase;
+        }
+        &:not(:first-child) {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+
+.light-color__type {
+  &::before {
+    background-color: #c0efd5;
+  }
+}
+.dark-color__type {
+  &::before {
+    background-color: $color-global;
+  }
+}
+
+.contracts-history {
+  h4 {
+    text-align: center;
+  }
+  h3 {
+    @include fontStyle(22px);
+    color: $color-dark;
+    text-align: center;
+    margin: 23px 0 14px;
+  }
+  table {
+    margin-bottom: 20px;
+    td {
+      font-weight: bold;
+      font-size: 11px;
+      color: #bdbdbd;
+      line-height: 29px;
+      &:last-child {
+        font-weight: normal;
+        font-size: 14px;
+        color: $color-dark;
+        text-align: end;
+      }
+    }
+  }
+}
+.projects-parameters__block {
+  .content-about__links {
+    .menu-list {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        border: 1px solid #f2f2f7;
+        width: 100%;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.borrowers-history__table {
+  table {
+    tr {
+      &:first-child {
+        background-color: #f2f2f7;
+        border-radius: 8px;
+        th {
+          padding: 11px 16px;
+          text-align: start;
+          @include fontStyle(14px);
+          color: #828282;
+        }
+      }
+      &:not(:first-child){
+        border-top: 1px solid #F2F2F7;
+      }
+    }
+    td {
+      vertical-align: middle;
+      height: 57px;
+      padding: 0 16px;
+      font-weight: normal;
+      font-size: 15px;
+      color: $color-dark;
+      
+    }
+    .table-green__type{
+      color: $color-global;
+    }
+    .table-orange__type{
+      color: #FF7D51;
+    }
+  }
+}

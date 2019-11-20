@@ -1,0 +1,40 @@
+@import "./normalize";
+@import "./variables";
+@import "./static";
+@import "./flex-box";
+@import "./header/header-stl";
+@import "./left-sidebar/lf-sidebar";
+@import "./fonts";
+@import "./project/project";
+@import "./investment/investment";
+@import "./orders/orders";
+@import "./loans/loans";
+@import "./registration/registration";
+@import "./main-page/main-page";
+@import "./main-page/borrowers";
+@import "./main-page/documents";
+@import "./project_investment/project_investment";
+@import "./signed_investment/_signed_investment/";
+@import "./investment_code/investment_code";
+@import "./balance/balance";
+@import "./news/news";
+@import "./new-request/new-request";
+@import "./requisites/requisites";
+@import "./profile/profile";
+
+
+// STEPS
+@import "./steps/first-step";
+@import "./steps/second-step";
+@import "./steps/third-step";
+@import "./steps/fourth-step";
+@import "./steps/style-steps";
+
+
+
+@import "./media/media-xl";
+@import "./media/media-lg";
+@import "./media/media-md";
+@import "./media/media-sm";
+
+

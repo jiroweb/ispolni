@@ -1,0 +1,38 @@
+.signed-investment__block {
+  width: 100%;
+  p {
+    max-width: 400px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #828282;
+  }
+}
+.loans-terms {
+  margin-top: 25px;
+  .download-documents {
+    + .download-documents {
+      margin-left: 45px;
+    }
+    .downloading-file {
+      @include wh(24px, 27px);
+      svg {
+        fill: $color-global;
+      }
+    }
+    .loans-terms__info {
+      margin-left: 11px;
+      p {
+        font-weight: normal;
+        font-size: 13px;
+        color: $color-dark;
+      }
+      span {
+        font-weight: normal;
+        font-size: 13px;
+        color: $color-light;
+      }
+    }
+  }
+}

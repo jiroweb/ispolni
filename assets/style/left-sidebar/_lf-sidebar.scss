@@ -1,0 +1,136 @@
+.left-sidebar{
+    width: 232px;
+    height: 100%;
+    border-right: 1px solid #F2F2F7;
+    position: fixed;
+    bottom: 0;
+    padding-top: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 99999;
+    background-color: white;
+    transition: $transition-all;
+}
+
+.content-box{
+    width: calc(100% - 232px);
+    min-height: 100vh;
+    margin-left: auto;
+}
+
+.left-sidebar__links{
+    padding: 0 24px 5px 24px;
+    ul{
+        width: 185px;
+        padding-top: 35px;
+        padding-bottom: 38px;
+        margin-bottom: 17px;
+        border-bottom: 1px solid #F2F2F7;
+        li+li{
+            margin-top: 17px;
+        }
+        .left-sidebar__links--active a{
+            color: $color-global;
+            &:before{
+                top: 0;
+                height: 100%;
+            }
+            svg{
+                fill: $color-global;
+            }
+        }
+        li a{
+            padding: 12px 0;
+            font-weight: 500;
+            font-size: 13px;
+            transition: $transition-all;
+            color: $color-light;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -24px;
+                width: 3px;
+                height: 0%;
+                background-color: $color-global;
+                transition: $transition-all;
+            }
+            &:hover:before{
+                top: 0;
+                height: 100%;
+            }
+            &:hover{
+                color: $color-global;
+            }
+            &:hover svg{
+                fill: $color-global;
+            }
+            svg{
+                width: 15px;
+                height: 15px;
+                margin-right: 12px;
+                fill: $color-light;
+                transition: $transition-all;
+            }
+        }
+    }
+    .left-sidebar__politics{
+        width: 183px;
+       a{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-global;
+            &:hover{
+                text-decoration: underline;
+            }
+        } 
+    }
+        
+}
+
+.left-sidebar__mobile{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+    svg{
+        width: 15px;
+        height: 15px;
+        fill: $color-global;
+    }
+}
+
+
+
+// FOR MOBILE
+
+.body-fix_mob {
+    .left-sidebar {
+        width: 232px;
+        box-shadow: 0px 10px 8px #737373;
+    }
+    .left-sidebar__links {
+        padding: 0 24px 5px 24px;
+        ul li a:before{
+            left: -24px;
+        }
+        .left-sidebar__politics a{
+            display: block;
+        }
+    }
+    .for-mobile__bg--mob{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: transparent;
+        z-index: 999;
+        left: 0;
+    }
+    .left-sidebar__mobile svg{
+        transform: rotate(-180deg);
+    }
+}

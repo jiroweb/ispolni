@@ -1,0 +1,229 @@
+.documents-info {
+  +.documents-info {
+    margin-top: 60px;
+  }
+
+  h4 {
+    @include fontStyle(18px);
+    color: $color-dark;
+    margin-bottom: 28px;
+  }
+}
+
+.company-document__main {
+  margin: -12px;
+
+  .single-info__block--big {
+    padding: 12px;
+    width: 16.666%;
+    position: relative;
+
+    +.single-info__block--big {
+      .single-info__block {
+        span {
+          font-weight: bold;
+          font-size: 15px;
+          color: #bbbbbb;
+          display: block;
+        }
+
+        p {
+          color: $color-dark;
+        }
+      }
+    }
+
+    .single-info__block {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      .file-description {
+        text-align: center;
+      }
+
+      .download-documents {
+        height: 180px;
+        background-color: white;
+        margin-bottom: 17px;
+        border-radius: 8px;
+        border: 1px solid #F2F2F7;
+
+        .downloading-file {
+          @include wh(50px, 56px);
+          margin: auto;
+          margin-bottom: 26px;
+
+          svg {
+            fill: $color-global;
+          }
+        }
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 14px;
+      line-height: 18px;
+
+      }
+    }
+
+  }
+}
+
+.choose-file__input {
+  @include wh(48px, 48px);
+  background-color: rgba($color: #2dca73, $alpha: 0.08);
+  border-radius: 50%;
+  position: relative;
+
+  input {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    font-size: 35px;
+    color: $color-global;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.choose-document {
+  cursor: pointer;
+
+  .download-documents {
+    border: 2px solid $color-global !important;
+    height: 100%;
+  }
+
+  p {
+    color: $color-global!important;
+    text-align: center;
+  }
+}
+
+.videos-info__block {
+  margin: -12px;
+
+  +.videos-info__block {
+    color: $color-dark;
+  }
+
+  .video-block {
+    padding: 12px;
+    width: 33.333%;
+    position: relative;
+    label.company-document__video{
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+    }
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #4F4F4F;
+    }
+  }
+}
+
+.single-video__block {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-bottom: 17px;
+
+  .download-documents {
+    border-radius: $border-radius;
+    margin-bottom: 17px;
+  }
+
+  .video-box {
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+    transition: $transition-all;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.75);
+    }
+    
+  }
+}
+.video-play__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: linear-gradient(0deg, rgba(3, 13, 21, 0.5), rgba(3, 13, 21, 0.5));
+  border-radius: $border-radius;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: $border-radius;
+}
+.video-play__icon {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 22px solid $color-dark;
+    border-bottom: 13px solid transparent;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999;
+  }
+}
+
+
+
+.remove-file,.remove-file-v,.remove-file__passport,.remove-company__video {
+  @include wh(25px, 25px);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-global;
+  }
+
+  &::before {
+    width: 70%;
+    height: 1.8px;
+  }
+
+  &::after {
+    width: 1.8px;
+    height: 70%;
+  }
+}

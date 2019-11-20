@@ -1,0 +1,211 @@
+.profile-info {
+  margin: 0 -12.5px;
+  .profile-info__main {
+    .profile-info__block{
+    padding: 0 12.5px;
+    width: 66.66%;
+    .personal-info {
+      margin: 0 -12.5px;
+      .personal-info__main {
+        padding: 0 12.5px;
+        width: 50%;
+      }
+    }
+  }
+    .settings-info {
+      margin-top: 38px;
+      .new-request__protection {
+        background: none;
+        border: none;
+        padding: 0 0 12px 0;
+      }
+      .new-request__protection .new-request__text {
+        margin-top: 2px;
+        padding-left: 36px;
+        padding-right: 0;
+      }
+      .new-request__protection .steps-box__btn--check {
+        padding-left: 0;
+      }
+    }
+  }
+  .company-info__main {
+    padding: 0 12.5px;
+    width: 33.33%;
+    .add-company {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #2dca73;
+      }
+    }
+    .single-video__block {
+      margin-bottom: 0;
+      .download-documents {
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+}
+.personal-info__table {
+  background-color: white;
+  padding: 37px 24px;
+  table {
+    margin-bottom: 30px;
+    tr {
+      td {
+        font-size: 13px;
+        color: $color-dark;
+        padding: 7.5px 0;
+        &:first-child {
+          font-weight: 500;
+          width: 128px;
+        }
+        &:not(:first-child) {
+          padding-left: 12px;
+        }
+        input{
+          width: 100%;
+          display: block;
+          color: $color-light;
+        }
+      }
+    }
+  }
+
+  .download-info__text {
+    margin-bottom: 26px;
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      color: #828282;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .personal-more__info {
+    .password-info {
+      margin-bottom: 14px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      color: #333333;
+    }
+  }
+}
+.personal-info__title {
+  margin-bottom: 29px;
+  h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: $color-dark;
+  }
+  span {
+    width: 32px;
+    height: 32px;
+    background-color: rgba($color: #bdbdbd, $alpha: 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover svg {
+      fill: $color-global;
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: $color-dark;
+      transition: $transition-all;
+    }
+  }
+}
+.video__img--download {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 21px;
+  }
+  .choose-document {
+    display: block;
+    p {
+      color: $color-dark !important;
+      text-align: center;
+    }
+    .download-documents {
+      background-color: #e0e0e0 !important;
+      border: 2px solid #e0e0e0 !important;
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+  .choose-file__input {
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+
+    span {
+      color: $color-dark;
+    }
+  }
+  .choose-file__text--passport {
+    font-weight: normal;
+    font-size: 12px;
+    color: $color-dark;
+    text-align: center;
+  }
+}
+.passport-img {
+  position: relative;
+  margin-bottom: 17px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.added-video{
+  position: relative;
+  height: 180px;
+  video{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.company-document__download {
+  a {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: $color-dark;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    span {
+      position: absolute;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      top: 0;
+    }
+  }
+}
+.company-info__show--content {
+  height: 254px;
+  overflow: hidden;
+}
+.all-info__scroll {
+  color: $color-global;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 27px;
+  cursor: pointer;
+}

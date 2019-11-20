@@ -1,0 +1,117 @@
+.registration{
+  background-color: #F9F9FB;
+}
+
+.registration-main {
+  max-width: 1168px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+}
+.registration-part {
+  width: 45.7%;
+  min-height: 100%;
+  padding: 30px 10px 20px;
+  background-color: white;
+}
+.registration-block {
+  height: 100%;
+  max-width: 316px;
+  width: 100%;
+  padding: 20px 0;
+  h3 {
+    @include fontStyle(22px);
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+  .registration-info {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #828282;
+    margin-top: 20px;
+    display: block;
+    i {
+      color: $color-global;
+    }
+  }
+  > p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #828282;
+    margin-bottom: 30px;
+  }
+}
+.registration-img {
+  width: 54.3%;
+  min-height: 100%;
+}
+.registration-btn {
+  a {
+    background-color: $color-global;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    height: 56px;
+    border-radius: $border-radius;
+    margin-top: 38px;
+  }
+}
+.without-bg {
+  a {
+    background-color: white;
+    border: 1px solid $color-global;
+    color: $color-global;
+    margin-top: 20px;
+  }
+}
+.registration-inputs + .registration-inputs {
+  margin-top: 12px;
+}
+.save-password a {
+  background-color: $color-light;
+}
+.data-inputs {
+  .password-input {
+    input {
+      border: 1px solid $color-global;
+    }
+  }
+  .invalid-inputs__info {
+    input {
+      border: 1px solid #ff7d51;
+    }
+  }
+}
+.restore-password {
+  text-align: center;
+  a {
+    color: $color-global;
+    @include fontStyle(14px);
+    margin-top: 11px;
+    text-transform: none;
+  }
+}
+.invalid-info {
+  h3 {
+    margin-bottom: 2px;
+  }
+  > span {
+    color: #ff7d51;
+    margin-bottom: 13px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+.restore-password__info {
+  p {
+    font-weight: normal;
+    font-size: 19px;
+    color: $color-dark;
+  }
+}
+.restore-date__inputs{
+    margin-bottom: 24px;
+}

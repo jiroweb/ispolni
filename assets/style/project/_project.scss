@@ -1,0 +1,292 @@
+.content-box__main--style {
+  max-width: 1168px;
+  width: 100%;
+  margin: auto;
+  padding: 34px 40px 20px 40px;
+}
+
+.investment-projects__block + .investment-projects__block {
+  margin-top: 6px;
+}
+
+.investment-info {
+  padding: 16px 17px 15px 40px;
+  position: relative;
+  border-radius: $border-radius;
+  background-color: white;
+  transition: $transition-all;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+  }
+
+}
+.block-bg__change {
+  background-color: #e1f7ea;
+  .expert {
+    background-color: #b5ecce;
+  }
+  .investment-price__line {
+    background-color: #b5ecce;
+  }
+}
+
+.protection {
+  position: absolute;
+  @include wh(20px, 100%);
+  top: 0;
+  left: 0;
+  border-radius: 8px 0px 0px 8px;
+  background-color: $color-global;
+
+  p {
+    font-weight: bold;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.04em;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+  }
+}
+
+.single-link {
+  position: absolute;
+  top: -24px;
+  z-index: 99;
+  p {
+    @include fontStyle(14px);
+    color: $color-light;
+  }
+}
+
+.links-arrows {
+  margin-left: 3px;
+
+  a {
+    &:first-child {
+      display: block;
+      border: 3px solid transparent;
+      border-bottom: 4px solid $color-light;
+      margin-bottom: 2px;
+    }
+
+    &:last-child {
+      display: block;
+      border: 3px solid transparent;
+      border-top: 4px solid $color-light;
+    }
+  }
+}
+
+.investment-projects__main-block {
+  .investment-projects__block {
+    &:not(:first-of-type) .single-link {
+      opacity: 0;
+      overflow: initial;
+    }
+  }
+}
+
+.investor-logo__number {
+  margin-right: 31px;
+}
+
+.investor-logo {
+  @include wh(60px, 60px);
+  border-radius: 50%;
+  background-color: rgba($color: #bdbdbd, $alpha: 0.2);
+  margin-bottom: 6px;
+}
+
+.investor-number {
+  p {
+    @include fontStyle(13px);
+    color: $color-light;
+  }
+}
+
+.investor-degree {
+  a {
+    border-radius: 4px;
+    padding: 5px;
+  }
+}
+
+.expert {
+  padding: 5px 8px;
+  border-radius: 4px;
+  @include fontStyle(12px);
+  color: $color-global;
+  background-color: #d9ffe1;
+}
+
+.pro-degree {
+  @include fontStyle(12px);
+  color: $color-global;
+  border: 1px solid $color-global;
+}
+
+.skilled {
+  @include fontStyle(12px);
+  color: #ffc212;
+  background-color: #fff0c4;
+}
+
+.starter {
+  color: #0aafff;
+  background-color: #daf3ff;
+  @include fontStyle(12px);
+}
+
+.investor-degree a + a {
+  margin-left: 8px;
+  padding: 4px 8px;
+}
+
+.investor-name__info {
+  p {
+    @include fontStyle(15px);
+    color: $color-dark;
+    margin: 8px 0 19px;
+  }
+}
+
+.investor-info .investor-name .investor-projects__info {
+  p {
+    color: $color-light;
+    @include fontStyle(13px);
+  }
+
+  span {
+    color: $color-dark;
+    margin: 0 3px;
+  }
+}
+
+.investment-percent__info {
+  p {
+    @include fontStyle(16px);
+    color: $color-dark;
+  }
+}
+.query {
+  @include wh(15px, 15px);
+  border: 1px solid $color-light;
+  border-radius: 50%;
+  margin-left: 5px;
+  // margin-bottom: 5px;
+  @include fontStyle(11px);
+  color: $color-light;
+}
+
+.term-main__info {
+  .single-link {
+    margin-left: 30px;
+  }
+}
+
+.investment-term__info {
+  margin: 0 30px;
+
+  p {
+    @include fontStyle(16px);
+    color: $color-dark;
+  }
+}
+
+.offered-price {
+  p {
+    @include fontStyle(16px);
+    color: $color-dark;
+  }
+
+  span {
+    @include fontStyle(16px);
+    color: $color-light;
+  }
+}
+.max-price,
+.investment-date__info {
+  p {
+    @include fontStyle(16px);
+    color: $color-dark;
+  }
+
+  span {
+    @include fontStyle(13px);
+    color: $color-light;
+  }
+}
+
+.investment-price__date .investment-date__info {
+  max-width: 170px;
+  width: 100%;
+}
+
+.investment-price__line {
+  position: relative;
+  @include wh(181px, 4px);
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  margin: 4px 0 5px;
+
+  span {
+    display: block;
+    height: 100%;
+    background: $color-global;
+    border-radius: 3px;
+  }
+}
+
+.investment-date__info {
+  margin-right: 28px;
+}
+
+.investment-confirm {
+  p {
+    width: 144px;
+    @include fontStyle(15px);
+    line-height: 18px;
+    text-align: center;
+    color: $color-dark;
+  }
+
+  .investment-btn {
+    border-radius: 6px;
+    background: $color-global;
+    padding: 15px 20px;
+    @include fontStyle(15px);
+    color: white;
+  }
+}
+
+.investment-confirm__info {
+  p {
+    @include fontStyle(13px);
+    line-height: 14px;
+    text-align: center;
+    color: $color-light;
+    margin-top: 8px;
+  }
+}
+.block-bg__change .confirm-svg{
+  background-color: #b5ecce;
+
+}
+.confirm-svg {
+  @include wh(32px, 32px);
+  background-color: #F3F3F3;
+  border-radius: 50%;
+  margin-left: 12px;
+  transition: $transition-all;
+  &:hover{
+    background-color: $color-global;
+  }
+
+  .confirm-svg__style {
+    @include wh(18px, 20px);
+  }
+}

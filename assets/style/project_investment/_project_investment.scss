@@ -1,0 +1,58 @@
+.document-code {
+  margin-bottom: 27px;
+  span {
+    color: $color-global;
+  }
+}
+.cost-info__details {
+  .about-cost__range {
+    width: 47%;
+  }
+  > p {
+    width: 47%;
+    font-weight: normal;
+    font-size: 13px;
+    color: #808080;
+    line-height: 20px;
+  }
+}
+.investment-details__content {
+  border-bottom: 1px solid #f2f2f7;
+}
+
+.project-investment__block {
+  background-color: white;
+  border-radius: 8px;
+  .steps-box__btn {
+    text-align: left;
+    .steps-box__btn--check {
+      padding: 16px 0;
+      margin: 0;
+      a {
+        color: $color-global;
+      }
+    }
+    button {
+      margin: 0;
+    }
+  }
+  .investment-content__box {
+    margin: 38px 0 0;
+  }
+  .steps-box__btn {
+    margin-top: 25px;
+    padding: 0;;
+  }
+}
+.project-investment__about--cost {
+  width: 34%;
+  .projects-same__info {
+      tr{
+    td {
+      &:first-child{
+        width: 170px;
+      }
+    }
+}
+  }
+}

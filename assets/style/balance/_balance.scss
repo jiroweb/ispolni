@@ -1,0 +1,204 @@
+.title-cost__info--balance .page-title {
+    margin-bottom: 13.5px;
+}
+
+
+
+.balance-info {
+    margin: 0 -12.5px;
+
+    .balance-info__block {
+        width: 33.333%;
+        padding: 12.5px;
+
+        .balance-info__box {
+            height: 100%;
+            padding: 34px 24px 40px 24px;
+            background-color: white;
+            border: 1px solid #F2F2F7;
+            border-radius: $border-radius;
+
+            .balance-info__box--title {
+                margin-bottom: 22px;
+
+                p {
+                    @include fontStyle (18px);
+                    color: $color-dark;
+                    margin-bottom: 7px;
+                }
+
+                span {
+                    @include fontStyle (14px);
+                    color: #808080;
+                    display: block;
+                }
+            }
+
+            .balance-info__box--sum__block {
+                height: 70%;
+
+                .balance-info__box--sum {
+                    margin-bottom: 24px;
+
+                    p {
+                        @include fontStyle(32px);
+                        color: $color-dark;
+                    }
+
+                    p:nth-child(2) {
+                        margin-top: 10px;
+                        color: $color-global;
+                    }
+                }
+            }
+
+
+            .balance-info__box--btn {
+                a {
+                    height: 48px;
+                    color: $color-global;
+                    border-radius: $border-radius;
+                    @include fontStyle(15px);
+                    border: 1px solid $color-global;
+                }
+
+                a+a {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.balance-history {
+    margin-top: 27.5px;
+    border: 1px solid #F2F2F7;
+    border-radius: $border-radius;
+    padding-top: 34px;
+    background-color: white;
+    padding: 34px 23px 0 23px;
+    overflow: hidden;
+
+    .balance-history__title {
+        margin-bottom: 21.5px;
+        @include fontStyle(18px);
+        color: $color-dark;
+    }
+
+    .balance-history__form {
+        margin-bottom: 35.25px;
+
+        .balance-history__form--info {
+            padding-right: 10px;
+
+            .balance-history__form--info__date {
+                margin-right: 32px;
+
+                .balance-history__form--info__date--box {
+                    width: 143px;
+                    height: 40px;
+
+                    +.balance-history__form--info__date--box {
+                        margin-left: 16px;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #E0E0E0;
+                        border-radius: $border-radius;
+                        padding: 0 16px;
+                        @include fontStyle(15px);
+                        color: $color-dark;
+
+                        &::placeholder {
+                            color: $color-light;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            .jq-selectbox__select {
+                width: 240px;
+                height: 40px;
+                border: 1px solid #E0E0E0;
+                border-radius: $border-radius;
+                padding: 0 16px;
+
+                .jq-selectbox__select-text {
+                    color: #808080;
+                    @include fontStyle(15px);
+
+                }
+            }
+        }
+
+        .balance-history__form--btn {
+            button {
+                width: 180px;
+                height: 40px;
+                border-radius: 6px;
+                background-color: transparent;
+                @include fontStyle(15px);
+                border: 1px solid $color-global;
+                color: $color-global;
+            }
+
+            button+button {
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .balance-history__table {
+        overflow-y: hidden;
+        overflow-x: auto;
+        margin: 0 -23px;
+
+        .balance-history__table--box {
+            width: 1086px;
+
+            table thead tr {
+                border-bottom: 1px solid #E0E0E0;
+
+                td {
+                    padding-bottom: 13.25px;
+                    padding-left: 23px;
+                    @include fontStyle(14px);
+                    color: #BBBBBB;
+                    line-height: 20px;
+
+                    span {
+                        color: $color-global;
+                    }
+                }
+            }
+
+            table tbody tr {
+
+                +tr {
+                    border-top: 1px solid #E0E0E0;
+                }
+
+                td {
+                    padding-top: 8.5px;
+                    padding-bottom: 11px;
+                    padding-left: 23px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: $color-dark;
+                    line-height: 20px;
+
+                    span {
+                        color: $color-global;
+                    }
+                }
+            }
+        }
+    }
+
+}

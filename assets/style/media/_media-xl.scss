@@ -1,0 +1,81 @@
+@media (max-width: 1366px) {
+  /*=======================-HEADER-MEDIA-max-width-1366-START-=======================*/
+  .logo.logo-mob {
+    width: 34px;
+  }
+  .header-menu {
+    margin-left: 80px;
+  }
+  /*=======================-HEADER-MEDIA-max-width-1366-END-=======================*/
+
+  /*==================== -CONTENT-BOX-MEDIA-max-width-1366-START- ================== */
+  .content-about {
+    padding: 25px 15px 0;
+  }
+
+  .content-box__main--style {
+    padding: 25px 15px 20px 15px;
+  }
+
+  .title-cost__info {
+    margin-bottom: 55px;
+  }
+
+  .page-title {
+    font-size: 19px;
+  }
+
+  .investment-info {
+    padding: 16px 10px 20px 32px;
+  }
+
+  .investor-logo__number {
+    margin-right: 25px;
+  }
+
+  .investment-confirm {
+    .investment-btn {
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    .confirm-svg {
+      margin-left: 5px;
+    }
+  }
+
+  /*==================== -CONTENT-BOX-MEDIA-max-width-1366-END- ====================*/
+  /*================== -PROHECTS-DETAILS-max-width-1366-START- ====================*/
+  .investment-details__date--percent p {
+    font-size: 17px;
+  }
+  /*=================== -PROHECTS-DETAILS-max-width-1366-END- =====================*/
+  /*======================== -INVESTMENT-max-width-1366-START- ====================== */
+  .investment-price__details {
+    p,
+    span {
+      font-size: 13px;
+    }
+  }
+  .investment-date__info {
+    margin-right: 15px;
+  }
+  /*========================= -INVESTMENT-max-width-1366-END- ======================= */
+  /*========================= -DOCUMENTS-max-width-1366-START- ====================== */
+  .company-document__main .single-info__block--big {
+    width: 20%;}
+  /*========================== -DOCUMENTS-max-width-1366-END- ======================= */
+
+
+
+
+      /*================== -BALANCE-max-width-1366-START- ================== */
+      .balance-history .balance-history__form .balance-history__form--info .jq-selectbox__select {
+        width: 180px;
+        padding: 0 14px;
+      }
+    /*=================== -BALANCE-max-width-1366-END- =================== */
+  
+
+
+}
